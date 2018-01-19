@@ -1,11 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-	<title>Hydrodynamics of Pumps - Lecture 5/7</title>
-	<link href="movies.css" rel="stylesheet" type="text/css"/>
-	<script type="text/javascript" src="mediaplayer-5.9-licensed/jwplayer.js"></script>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hydrodynamics of Pumps - Lecture 1/7</title>
+  <link href="movies.css" rel="stylesheet">
+  <link href="http://vjs.zencdn.net/6.6.0/video-js.css" rel="stylesheet">
+  
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+<body>
 	<div id="header">
 	        <div class="library_logo"><a href="http://library.caltech.edu"><img alt="CLS Logo" src="images/new_cls_logo_60.gif" /></a></div>
 		<div class="coda_logo"><a href="http://libguides.caltech.edu/CODA"><img alt="CODA Logo" src="images/codalogo.jpg" /></a></div>
@@ -26,26 +29,19 @@
 
 	<div id="videodiv">
 
-	    <div id="videocontainer">
-                ...loading video...
-            </div>
+        <video id="my-video" class="video-js" controls preload="auto" 
+  width="640" height="480"
+  poster="images/brennen_pump_lecture_5_still.png" data-setup="{}">
+    <source src="brennen_pump_lecture_5.mp4" type='video/mp4'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+    </video>
+
+    <script src="http://vjs.zencdn.net/6.6.0/video.js"></script>
 
 	</div>
-        <script type="text/javascript">     
-	    jwplayer("videocontainer").setup({'width':  '720',
-                                              'height': '480',
-	                                      'skin':   'skins/beelden.zip',
-                                              'image':  'images/brennen_pump_lecture_5_still.png',
-                                              'modes': [{ 'type':   'flash',
-                                                         'src':    'mediaplayer-5.9-licensed/player.swf',
-                                                         'config': { 'file': 'videos/brennen_pump_lecture_5.flv' }
-                                                       },
-                                                       { 'type':   'html5',
-                                                         'config': { 'file': 'videos/brennen_pump_lecture_5.mp4' }
-                                                       },
-                                                       { type: 'download' }
-                                              ]
-                                            });
 
         </script>
 
