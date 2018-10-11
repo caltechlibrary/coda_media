@@ -36,6 +36,13 @@ body
     border-style: none;
 }
 
+.lib_logo img
+{
+    float: left;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    border-style: none;
+}
 
 #maintext
 {
