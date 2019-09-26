@@ -3,10 +3,6 @@
 <head>
   <title>Demo</title>
   <link href="movies.css" rel="stylesheet">
-  <link href="http://vjs.zencdn.net/6.6.0/video-js.css" rel="stylesheet">
-  
-  <!-- If you'd like to support IE8 -->
-  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -33,21 +29,13 @@
 	    </p>
         </div>
 
-	<div id="videodiv">
-
-        <video id="my-video" class="video-js" controls preload="auto" 
-  width="640" height="480" data-setup="{}">
-    <source src="videos/burgers_red_lattice_detuned.mp4" type='video/mp4'>
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a web browser that
-      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
-    </video>
-
-    <script src="http://vjs.zencdn.net/6.6.0/video.js"></script>
-
-	</div>
-
+        <div id="videodiv"></div>
+        <script src="https://feeds.library.caltech.edu/scripts/CL.js"></script>
+        <script> 
+            let div = document.getElementById("videodiv"),
+            doi = '10.22002/D1.1098',
+            item_no = 0;
+            CL.doi_video_player(div,doi,item_no);
         </script>
 
 	<div id="lectures">
