@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <link href="movies.css" rel="stylesheet">
+</head>
+<body>
+	<div id="header">
+	        <div class="lib_logo"><a
+                        href="http://library.caltech.edu"><img alt="Library
+                        Logo" src="images/CLvertical.png" style="width:140px;"/></a></div>
+		<div class="coda_logo"><a href="http://libguides.caltech.edu/CODA"><img alt="CODA Logo" src="images/codalogo.jpg" /></a></div>
+	</div>
+
+	<hr class="top"/>
+
+        <div id="maintext">
+          <p>
+                Briney, Kristin
+            </p>
+            <p>
+                Data Visualization 101
+            </p>
+            <p>
+                This is a recording from the Data Visualization 101 workshop held on 2020-05-21 over Zoom. This workshop covered how to choose the right chart type for your data and how good design choices will make your chart easier to understand. The workshop focused on visualization best practices, independent of any specific visualization software, and consisted of lecture and hands on activities.
+            </p>
+            <p>
+		2020-05-27
+	    </p>
+        </div>
+
+        <div id="videodiv"></div>
+        <script src="https://feeds.library.caltech.edu/scripts/CL.js"></script>
+        <script> 
+            let div = document.getElementById("videodiv"),
+            doi = '10.22002/D1.1440',
+            item_no = 0;
+            CL.doi_video_player(div,doi,item_no);
+        </script>
+
+	<div id="lectures">
+            <table class="eptable">
+		<tr>
+		    <th class="ep_row">CaltechDATA Record</th>
+		    <td class="ep_row"> <a class="persistent"
+                            href="https://doi.org/10.22002/D1.1440">https://doi.org/10.22002/D1.1440</a></td>
+		</tr>
+	    </table>
+        </div>
+
+        <hr class="second_last"/>
+        <hr class="last"/>
+    </body>
+</html>
